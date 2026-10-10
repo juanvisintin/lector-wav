@@ -137,12 +137,12 @@ int main() {
 	try {
 		WavData wav = readWav(ruta);
 
-		std::cout << "Archivo:			" << ruta << "\n"
-			<< "Canales:			" << wav.numChannels << "\n"
+		std::cout << "Archivo: " << ruta << "\n"
+			<< "Canales: " << wav.numChannels << "\n"
 			<< "Frecuencia de muestreo:	" << wav.sampleRate << "Hz\n"
-			<< "Bits por muestra:	" << wav.bitsPerSample << "\n"
-			<< "Frames:				" << wav.numFrames() << "\n"
-			<< "Duración:			" << std::fixed << std::setprecision(2)
+			<< "Bits por muestra: " << wav.bitsPerSample << "\n"
+			<< "Frames:	" << wav.numFrames() << "\n"
+			<< "Duración: " << std::fixed << std::setprecision(2)
 			<< wav.durationSeconds() << "seg\n";
 	}
 	catch (const std::exception& e) {
